@@ -8,7 +8,7 @@ tools allows a researcher choose at reasonable set of predictive variables.   To
 human bias, the selection process can be done by an autmoatic procedure in the form of a 
 sequence such as F-tests or making use of theAkaike information criterion.
 
-As George Box noted,  "The most that can be expected from any model is that it can 
+As [George Box](https://en.wikipedia.org/wiki/George_E._P._Box) noted,  "The most that can be expected from any model is that it can 
 supply a useful approximation to reality: All models are wrong; some models are useful".
 
 ## Requirements
