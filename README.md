@@ -1,4 +1,4 @@
-# model-selection
+# Model Selection
 Tools for the selection of a statistical model from experimental data. 
 
 ## Requirements
