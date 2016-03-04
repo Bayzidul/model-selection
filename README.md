@@ -4,9 +4,10 @@ Tools for the selection of a statistical model from experimental data.
 ## Stepwise Regression
 
 While no model selection criteria is perfect, making use of the avaliable statistical
-tools allows a researcher choose at reasonable set of predictive variables.   To remove
-human bias, the selection process can be done by an autmoatic procedure in the form of a 
-sequence such as F-tests or making use of theAkaike information criterion.
+tools allows a researcher to systematically choose a set of predictive variables for a 
+given set of data and selection critiria.  The selection process can be done by an autmoatic 
+procedure in the form of a sequence of tests such as F-tests or making use of theAkaike information 
+criterion.
 
 As [George Box](https://en.wikipedia.org/wiki/George_E._P._Box) noted,  "The most that can be expected from any model is that it can 
 supply a useful approximation to reality: All models are wrong; some models are useful".
