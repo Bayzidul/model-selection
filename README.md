@@ -17,7 +17,9 @@ year = {2013},
 note = {{ISBN} 3-900051-07-0},
 url = {http://www.R-project.org/},
 }
+```
 
+```bibtex
 @Book{car,
 title = {An {R} Companion to Applied Regression},
 edition = {Second},
@@ -27,3 +29,4 @@ publisher = {Sage},
 address = {Thousand Oaks {CA}},
 url = {http://socserv.socsci.mcmaster.ca/jfox/Books/Companion},
 }
+```
