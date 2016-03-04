@@ -18,12 +18,12 @@ note = {{ISBN} 3-900051-07-0},
 url = {http://www.R-project.org/},
 }
 
-@Book{,
-    title = {An {R} Companion to Applied Regression},
-    edition = {Second},
-    author = {John Fox and Sanford Weisberg},
-    year = {2011},
-    publisher = {Sage},
-    address = {Thousand Oaks {CA}},
-    url = {http://socserv.socsci.mcmaster.ca/jfox/Books/Companion},
-  }
+@Book{car,
+title = {An {R} Companion to Applied Regression},
+edition = {Second},
+author = {John Fox and Sanford Weisberg},
+year = {2011},
+publisher = {Sage},
+address = {Thousand Oaks {CA}},
+url = {http://socserv.socsci.mcmaster.ca/jfox/Books/Companion},
+}
