@@ -1,6 +1,17 @@
 # Model Selection
 Tools for the selection of a statistical model from experimental data. 
 
+## Stepwise Regression
+
+While no model selection criteria is perfect, making use of the avaliable statistical
+tools provides valuable information to help a researcher choose at reasonable set of
+predictive variables.   To removed human bias, the selection process can be done 
+by an autmoatic procedure in the form of a sequence such as F-tests or making use
+of theAkaike information criterion.
+
+As George Box noted,  "The most that can be expected from any model is that it can 
+supply a useful approximation to reality: All models are wrong; some models are useful".
+
 ## Requirements
 - [R](https://www.r-project.org/): environment for statistical computing and graphics
 - [car](https://cran.r-project.org/web/packages/car/): Companion to Applied Regression
