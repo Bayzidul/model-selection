@@ -27,9 +27,6 @@ library(car)
 #
 # Read the data
 #
-choose.files(default = "default.dat", caption = "Select file",
-             multi = FALSE, filters = "dat" )
-#
 #data <- read.table("ge-mainz14.dat", header=TRUE ,  col.names = c("q2", "Ge", "dGe"))
 data <- read.table("default.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
 #data <- read.table("ge.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
