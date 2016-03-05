@@ -14,6 +14,7 @@ supply a useful approximation to reality: All models are wrong; some models are 
 ## Requirements
 - [R](https://www.r-project.org/): environment for statistical computing and graphics
 - [car](https://cran.r-project.org/web/packages/car/): Companion to Applied Regression
+- [gplot](https://cran.r-project.org/web/packages/gplots/index.html): Various R Programming Tools for Plotting Data
 
 ## References
 
