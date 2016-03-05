@@ -19,6 +19,21 @@ supply a useful approximation to reality: All models are wrong; some models are 
 ## References
 
 ```bibtex
+@article{Higinbotham:2015rja,
+      author         = "Higinbotham, Douglas W. and Kabir, Al Amin and Lin,
+                        Vincent and Meekins, David and Norum, Blaine and Sawatzky,
+                        Brad",
+      title          = "{The Proton Radius from Electron Scattering Data}",
+      year           = "2015",
+      eprint         = "1510.01293",
+      archivePrefix  = "arXiv",
+      primaryClass   = "nucl-ex",
+      SLACcitation   = "%%CITATION = ARXIV:1510.01293;%%"
+}
+```
+
+
+```bibtex
 @Manual{R,
 title = {R: A Language and Environment for Statistical Computing},
 author = {{R Core Team}},
