@@ -1,0 +1,67 @@
+#
+# Maclaurin Series Stepwise Regresion Model
+# by Douglas Weadon Higinbotham, Jefferson Lab
+#
+message("")
+message("Maclaurin Series Stepwise Model Selection")
+message("")
+#
+# Load the car library for the ellipses.
+#
+library(car)
+#
+# Choosing the order of polynominal to fit a given set of data and
+# producing the resulting confience ellipses of the first two parameters
+# at the 0.68268, 0.95450, 0.99730, 0.999936, 0.999999.
+#
+# Code assumes reads in data in an x y dy format.
+#
+# Use the Akaike information criterion (AIC) to measure the relative quality 
+# of statistical models for a given set of data.  For a given collection of 
+# models  for the data, AIC estimates the quality of each model, relative to 
+# each of # the other models. Hence, AIC provides a means for model selection.
+#
+# Herein we make use of the Akaike information criterion to decide 
+# the Maclaurin series to use for describing a given set of data.   
+# For this test it was very convenient to use the R software package.
+#
+# Read the data
+#
+choose.files(default = "default.dat", caption = "Select file",
+             multi = FALSE, filters = "dat" )
+#
+#data <- read.table("ge-mainz14.dat", header=TRUE ,  col.names = c("q2", "Ge", "dGe"))
+data <- read.table("default.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+#data <- read.table("ge.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
+#data <- read.table("bevington.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
+#
+# Define the mininum model.
+#
+min.model <- lm(data$y ~ data$x, weight=1/data$dy^2)
+#
+# Define a high order Maclaurin series to be used as a forward model.  
+#
+fwd.model <- step(min.model, direction="forward", scope=( ~ data$x +I(data$x^2) +I(data$x^3) +I(data$x^4) +I(data$x^5) +I(data$x^6)  +I(data$x^7) +I(data$x^8) +I(data$x^9) +I(data$x^10) +I(data$x^11) ))
+#
+# Print the function that passes our significance test.
+#
+message("")
+message('Akaike Information Criterion Selected Model')
+print(summary(fwd.model))
+#
+# Pick which indices to use in the ellipse.  By default we have set this to slope and intercept.
+#
+which.coef <-c(1,2)
+#
+# Plot the multivarient confidence ellipses.
+#
+gray.colors(12, start = 0.1, end = 0.9, gamma = 1.2, alpha = NULL)
+#
+# One Thru Five Sigma Confidence Ellipses
+#
+confidenceEllipse(fwd.model,which.coef,level=0.999999,xlab="Intercept Coefficient",ylab="Slope Coefficient",col="gray90")
+confidenceEllipse(fwd.model,which.coef,level=0.999936,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray70")
+confidenceEllipse(fwd.model,which.coef,level=0.99730,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray60")
+confidenceEllipse(fwd.model,which.coef,level=0.95450,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray40")
+confidenceEllipse(fwd.model,which.coef,level=0.68268,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray20")
+#
