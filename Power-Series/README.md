@@ -1,0 +1,2 @@
+# Power Series Stepwise Regression
+
