@@ -7,8 +7,10 @@ message("Maclaurin Series Stepwise Model Selection")
 message("")
 #
 # Load the car library for the ellipses.
+# Load the gplots library for text on plot
 #
 library(car)
+library(gplots)
 #
 # Choosing the order of polynominal to fit a given set of data and
 # producing the resulting confience ellipses of the first two parameters
@@ -54,6 +56,14 @@ which.coef <-c(1,2)
 #
 gray.colors(12, start = 0.1, end = 0.9, gamma = 1.2, alpha = NULL)
 #
+#
+#
+par(mfrow=c(2,2))
+plot(x,y)
+lines(x,predict(fwd.model))
+plot(x,y-predict(fwd.model),ylab="Residual")
+abline(0,0)
+#
 # One Thru Five Sigma Confidence Ellipses
 #
 confidenceEllipse(fwd.model,which.coef,level=0.999999,xlab="Intercept Coefficient",ylab="Slope Coefficient",col="gray90")
@@ -61,4 +71,4 @@ confidenceEllipse(fwd.model,which.coef,level=0.999936,xlab="Intercept Coefficien
 confidenceEllipse(fwd.model,which.coef,level=0.99730,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray60")
 confidenceEllipse(fwd.model,which.coef,level=0.95450,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray40")
 confidenceEllipse(fwd.model,which.coef,level=0.68268,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray20")
-#
+textplot (capture.output(summary(fwd.model)), valign="top")
