@@ -58,6 +58,7 @@ gray.colors(12, start = 0.1, end = 0.9, gamma = 1.2, alpha = NULL)
 #
 #
 #
+attach(data)
 par(mfrow=c(2,2))
 plot(x,y)
 lines(x,predict(fwd.model))
@@ -71,4 +72,6 @@ confidenceEllipse(fwd.model,which.coef,level=0.999936,xlab="Intercept Coefficien
 confidenceEllipse(fwd.model,which.coef,level=0.99730,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray60")
 confidenceEllipse(fwd.model,which.coef,level=0.95450,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray40")
 confidenceEllipse(fwd.model,which.coef,level=0.68268,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray20")
+
 textplot (capture.output(summary(fwd.model)), valign="top")
+detach(data)
