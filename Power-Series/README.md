@@ -8,3 +8,4 @@ The file will read the default.dat file (an ascii file with data in an x y dy fo
 
 To avoid issues with the different types of sum of squares regression (commonly called Type I, II and III sum of squares), we recommend sorting the data (e.g. see [ge-lowQ2.dat](ge-lowQ2.dat)).
 
+As an example of the power of the technique, we use the data from Bevington and Robinson page 120 to show how the code correctly determines the correct order polynominal to use to discribe the data. 
