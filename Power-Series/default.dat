@@ -1,4 +1,4 @@
-x   y     dy
+x   y     dy    # Example data from Bevington and Robinson, Data Reduction and Error Analysis, 3rd Edition, page 120.
 0  -0.849 0.05
 5  -0.738 0.05
 10 -0.537 0.05
