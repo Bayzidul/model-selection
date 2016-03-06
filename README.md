@@ -18,7 +18,7 @@ supply a useful approximation to reality: All models are wrong; some models are 
 
 ## References
 
-D. W. Higinbotham et al., The Proton Radius from Electron Scattering Data, [arxiv:1510.01293](http://arxiv.org/abs/1510.01293).
+- D. W. Higinbotham et al., The Proton Radius from Electron Scattering Data, [arXiv:1510.01293](http://arxiv.org/abs/1510.01293).
 
 ```bibtex
 @article{Higinbotham:2015rja,
