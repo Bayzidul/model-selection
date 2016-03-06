@@ -34,6 +34,7 @@ supply a useful approximation to reality: All models are wrong; some models are 
 }
 ```
 
+- R Core Team, R: A Language and Environment for Statistical Computing, [http://www.R-project.org/](http://www.R-project.org/).
 
 ```bibtex
 @Manual{R,
@@ -46,6 +47,8 @@ note = {{ISBN} 3-900051-07-0},
 url = {http://www.R-project.org/},
 }
 ```
+
+- J. Fox and S. Weisberg, An R Companion to Applied Regression, [http://socserv.socsci.mcmaster.ca/jfox/Books/Companion](http://socserv.socsci.mcmaster.ca/jfox/Books/Companion).
 
 ```bibtex
 @Book{car,
