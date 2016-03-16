@@ -28,8 +28,8 @@
   #
   # Read the data
   #
-  #data <- read.table("ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
-  data <- read.table("ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  data <- read.table("ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  #data <- read.table("ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
   #data <- read.table("ge.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
   #data <- read.table("bevington.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
@@ -72,11 +72,11 @@
   #
   # One Thru Five Sigma Confidence Ellipses
   #
-  confidenceEllipse(fwd.model,which.coef,level=0.999999,xlab="Intercept Coefficient",ylab="Slope Coefficient",col="gray90")
-  confidenceEllipse(fwd.model,which.coef,level=0.999936,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray70")
-  confidenceEllipse(fwd.model,which.coef,level=0.99730,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray60")
-  confidenceEllipse(fwd.model,which.coef,level=0.95450,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray40")
-  confidenceEllipse(fwd.model,which.coef,level=0.68268,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE,col="gray20")
+  #confidenceEllipse(fwd.model,which.coef,level=0.999999,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=FALSE,col="gray90")
+  #confidenceEllipse(fwd.model,which.coef,level=0.999936,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE ,col="gray70")
+  #confidenceEllipse(fwd.model,which.coef,level=0.997300,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE ,col="gray60")
+  confidenceEllipse(fwd.model,which.coef,level=0.954500,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=FALSE ,col="gray80")  # 95% CL
+  confidenceEllipse(fwd.model,which.coef,level=0.682680,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE  ,col="gray20")  # 68% CL
   #
   # Plot Information About The Final Fit
   #
