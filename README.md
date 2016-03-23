@@ -47,8 +47,6 @@ url = {http://www.R-project.org/},
 }
 ```
 
-- J. Fox and S. Weisberg, [An R Companion to Applied Regression](http://socserv.socsci.mcmaster.ca/jfox/Books/Companion).
-
 ```bibtex
 @Book{car,
 title = {An {R} Companion to Applied Regression},
