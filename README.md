@@ -16,6 +16,10 @@ Akaike information criterion.
 ## References
 
 - D. W. Higinbotham et al., The Proton Radius from Electron Scattering Data, [arXiv:1510.01293](http://arxiv.org/abs/1510.01293).
+- R Core Team, [R: A Language and Environment for Statistical Computing](http://www.R-project.org/).
+- J. Fox and S. Weisberg, [An R Companion to Applied Regression](http://socserv.socsci.mcmaster.ca/jfox/Books/Companion).
+
+## BibTeX
 
 ```bibtex
 @article{Higinbotham:2015rja,
@@ -30,8 +34,6 @@ Akaike information criterion.
       SLACcitation   = "%%CITATION = ARXIV:1510.01293;%%"
 }
 ```
-
-- R Core Team, [R: A Language and Environment for Statistical Computing](http://www.R-project.org/).
 
 ```bibtex
 @Manual{R,
