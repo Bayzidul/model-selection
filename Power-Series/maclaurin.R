@@ -26,11 +26,29 @@
   # In this code,  we make use of the Akaike information criterion to decide 
   # the Maclaurin series to use for describing a given set of data.   
   #
+  # Pick the data to read
+  #
+  #  readinteger <- function()
+  #{ 
+  #  n <- readline(prompt="Enter an integer: ")
+  #  if(!grepl("^[0-9]+$",n))
+  #  {
+  #    return(readinteger())
+  #  }
+  # 
+  # return(as.integer(n))
+  #}
+  #print(readinteger())
+  #print(n)
+  #
   # Read the data
   #
-  data <- read.table("ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  #if( readinteger() = 1 ) {
+  #data <- read.table("ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  # } 
   #data <- read.table("ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
+  data <- read.table("PRAD-projected.dat", header=TRUE,  col.names = c("x", "y", "dy"))
   #data <- read.table("ge.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
   #data <- read.table("bevington.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
   #

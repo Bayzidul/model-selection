@@ -9,6 +9,7 @@ Akaike information criterion.
 "The most that can be expected from any model is that it can  supply a useful approximation to reality: All models are wrong; some models are useful". -- [George Box](https://en.wikipedia.org/wiki/George_E._P._Box)
 
 ## Requirements
+
 - [R](https://www.r-project.org/): environment for statistical computing and graphics
 - [car](https://cran.r-project.org/web/packages/car/): Companion to Applied Regression
 - [gplot](https://cran.r-project.org/web/packages/gplots/index.html): Various R Programming Tools for Plotting Data
