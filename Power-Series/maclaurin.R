@@ -47,8 +47,8 @@
   #data <- read.table("ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   # } 
   #data <- read.table("ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
-  #data <- read.table("default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
-  data <- read.table("PRAD-projected.dat", header=TRUE,  col.names = c("x", "y", "dy"))
+  data <- read.table("default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
+  #data <- read.table("PRAD-projected.dat", header=TRUE,  col.names = c("x", "y", "dy"))
   #data <- read.table("ge.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
   #data <- read.table("bevington.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
   #
