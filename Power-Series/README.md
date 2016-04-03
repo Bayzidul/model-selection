@@ -13,11 +13,11 @@ source ('macluarin.R')
 
 The file will read selected *.dat file (an ascii file with data in an x y dy format) and using stepwise linear regressionwill pick the order of the Maclaurin sereis to fit the data using the [Akaiki Information Criterion](https://en.wikipedia.org/wiki/Akaike_information_criterion).
 
-To avoid issues with the different types of sum of squares regression (commonly called Type I, II and III sum of squares), we recommend sorting the data (e.g. see [data/ge-lowQ2.dat](ge-lowQ2.dat)).   NOTE:  A magnet's hysterisis curve would be an example of data where order of the points is critially important.
+To avoid issues with the different types of sum of squares regression (commonly called Type I, II and III sum of squares), we recommend sorting the data (e.g. see [data/ge-lowQ2.dat](data/ge-lowQ2.dat)).   NOTE:  A magnet's hysterisis curve would be an example of data where order of the points is critially important.
 
 ### Example Results
 
-As an example of the power of the technique, we use the data from Bevington and Robinson page 120 [data/Bevington.dat](Bevington.dat) to show how the code correctly determines the correct order polynominal to use to discribe the data. 
+As an example of the power of the technique, we use the data from Bevington and Robinson page 120 [data/Bevington.dat](data/Bevington.dat) to show how the code correctly determines the correct order polynominal to use to discribe the data. 
 
-The [data/ge-lowQ2.dat](ge-lowQ2.dat) and [data/ge-mainz14.dat](ge-mainz14.dat) files are the low Q2 data used in the determination of the proton radius.
+The [data/ge-lowQ2.dat](data/ge-lowQ2.dat) and [data/ge-mainz14.dat](data/ge-mainz14.dat) files are the files used in the determination of the proton radius.
 
