@@ -19,6 +19,6 @@ To avoid issues with the different types of sum of squares regression (commonly 
 
 As an example of the power of the technique, we use the data from Bevington and Robinson page 120 [Bevington.dat](data/Bevington.dat) to show how the code correctly determines the correct order polynominal to use to discribe the data. 
 
-The [ge-lowQ2.dat](data/ge-lowQ2.dat) and [ge-mainz14.dat](data/ge-mainz14.dat) files are the files used in the determination of the proton radius.
+The [ge-lowQ2.dat](data/ge-lowQ2.dat) and [ge-mainz14.dat](data/ge-mainz14.dat) files are the files used in the determination of the proton radius using stepwise regression [arXiv.1510.01293](http://arxiv.org/abs/1510.01293).
 
 
