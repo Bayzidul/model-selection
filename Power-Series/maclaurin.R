@@ -46,8 +46,8 @@
   data <- read.table("data/ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/PRAD-projected.dat", header=TRUE,  col.names = c("x", "y", "dy"))
-  #data <- read.table("data/ge.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
-  #data <- read.table("data/bevington.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
+  #data <- read.table("data/ge.dat", header=FALSE ,  col.names = c("x", "y", "dy"))
+  #data <- read.table("data/Bevington.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #
   # Define the mininum model.
   #
