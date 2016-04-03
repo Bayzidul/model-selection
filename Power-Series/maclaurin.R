@@ -13,8 +13,7 @@
   library(gplots)
   #
   # Choosing the order of polynominal to fit a given set of data and
-  # producing the resulting confience ellipses of the first two parameters
-  # at the 0.68268, 0.95450, 0.99730, 0.999936, 0.999999.
+  # producing the resulting confience ellipses.
   #
   # Code assumes reads in data in an x y dy format.
   #
@@ -43,24 +42,21 @@
   #
   # Read the data
   #
-  #data <- read.table("ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
-  data <- read.table("ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
-  #data <- read.table("default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
-  #data <- read.table("PRAD-projected.dat", header=TRUE,  col.names = c("x", "y", "dy"))
-  #data <- read.table("ge.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
-  #data <- read.table("bevington.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
+  #data <- read.table("data/ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  data <- read.table("data/ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  #data <- read.table("data/default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
+  #data <- read.table("data/PRAD-projected.dat", header=TRUE,  col.names = c("x", "y", "dy"))
+  #data <- read.table("data/ge.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
+  #data <- read.table("data/bevington.dat", header=FALSE ,  col.names = c("q2", "Ge", "dGe"))
   #
   # Define the mininum model.
   #
   min.model <- lm(data$y ~ data$x, weight=1/data$dy^2)
-  #min.model <- lm(y ~ x, weight=1/dy^2)
   #
   # Define a high order Maclaurin series to be used as a forward model.  
   #
   fwd.model <- step(min.model, direction="forward", scope=(   ~ data$x + I(data$x^2) + I(data$x^3) +I(data$x^4)  + I(data$x^5) + I(data$x^6) +
                                                            I(data$x^7) + I(data$x^8) + I(data$x^9) +I(data$x^10) + I(data$x^11) ))
-  #message="calc. forward model"
-  #fwd.model <- step(min.model, direction="forward", scope=( ~ x +I(x^2) +I(x^3) +I(x^4) +I(x^5) +I(x^6)  +I(x^7) +I(x^8) +I(x^9) +I(x^10) +I(x^11) ))
   #
   # Print the function that passes our significance test.
   #
@@ -87,6 +83,7 @@
   abline(0,0)
   #
   # One Thru Five Sigma Confidence Ellipses
+  # levels equal 0.68268, 0.95450, 0.99730, 0.999936, 0.999999.
   #
   #confidenceEllipse(fwd.model,which.coef,level=0.999999,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=FALSE,col="gray90")
   #confidenceEllipse(fwd.model,which.coef,level=0.999936,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE ,col="gray70")
