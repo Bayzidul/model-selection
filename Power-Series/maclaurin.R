@@ -43,9 +43,7 @@
   #
   # Read the data
   #
-  #if( readinteger() = 1 ) {
-  data <- read.table("ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
-  # } 
+  #data <- read.table("ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   data <- read.table("ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
   #data <- read.table("PRAD-projected.dat", header=TRUE,  col.names = c("x", "y", "dy"))
