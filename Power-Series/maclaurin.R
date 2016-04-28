@@ -21,34 +21,22 @@
   # of statistical models for a given set of data.  Since AIC estimates the quality 
   # of each model, AIC provides a tool for model selection even for non-nested 
   # models.
-  #
-  # In this code,  we make use of the Akaike information criterion to decide 
-  # the Maclaurin series to use for describing a given set of data.   
-  #
-  # Pick the data to read
-  #
-  #  readinteger <- function()
-  #{ 
-  #  n <- readline(prompt="Enter an integer: ")
-  #  if(!grepl("^[0-9]+$",n))
-  #  {
-  #    return(readinteger())
-  #  }
   # 
-  # return(as.integer(n))
-  #}
-  #print(readinteger())
-  #print(n)
-  #
   # Read the data
   #
   #data <- read.table("data/ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
-  data <- read.table("data/ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  #data <- read.table("data/ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  #data <- read.table("data/park2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/PRAD-projected.dat", header=TRUE,  col.names = c("x", "y", "dy"))
+  data <- read.table("data/PRAD.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/ge.dat", header=FALSE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/Bevington.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #
+  message("")
+  message("Data has been read.")
+  message("")
+  
   # Define the mininum model.
   #
   min.model <- lm(data$y ~ data$x, weight=1/data$dy^2)
