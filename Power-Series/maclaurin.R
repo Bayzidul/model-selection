@@ -24,13 +24,14 @@
   # 
   # Read the data
   #
-  #data <- read.table("data/ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  data <- read.table("data/ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/park2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/PRAD-projected.dat", header=TRUE,  col.names = c("x", "y", "dy"))
-  data <- read.table("data/PRAD.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
-  #data <- read.table("data/ge.dat", header=FALSE ,  col.names = c("x", "y", "dy"))
+  #data <- read.table("data/PRAD.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  #data <- read.table("data/Carl.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  #data <- read.table("data/ge.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/Bevington.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #
   message("")
@@ -47,6 +48,8 @@
                                                            I(data$x^7) + I(data$x^8) + I(data$x^9) +I(data$x^10) + I(data$x^11) ))
   #
   # Print the function that passes our significance test.
+  #
+  chk.model <- lm(data$y ~ data$x + I(data$x^2) + I(data$x^3) + I(data$x^4) + I(data$x^5), weight=1/data$dy^2)
   #
   message("")
   message('Akaike Information Criterion Selected Model')
@@ -73,10 +76,10 @@
   # One Thru Five Sigma Confidence Ellipses
   # levels equal 0.68268, 0.95450, 0.99730, 0.999936, 0.999999.
   #
-  #confidenceEllipse(fwd.model,which.coef,level=0.999999,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=FALSE,col="gray90")
-  #confidenceEllipse(fwd.model,which.coef,level=0.999936,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE ,col="gray70")
-  #confidenceEllipse(fwd.model,which.coef,level=0.997300,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE ,col="gray60")
   confidenceEllipse(fwd.model,which.coef,level=0.954500,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=FALSE ,col="gray80")  # 95% CL
+  confidenceEllipse(fwd.model,which.coef,level=0.999999,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE  ,col="gray90")
+  confidenceEllipse(fwd.model,which.coef,level=0.999936,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE ,col="gray70")
+  confidenceEllipse(fwd.model,which.coef,level=0.997300,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE ,col="gray60")
   confidenceEllipse(fwd.model,which.coef,level=0.682680,xlab="Intercept Coefficient",ylab="Slope Coefficient",add=TRUE  ,col="gray20")  # 68% CL
   #
   # Plot Information About The Final Fit
