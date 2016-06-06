@@ -24,7 +24,8 @@
   # 
   # Read the data
   #
-  data <- read.table("data/ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  #data <- read.table("data/ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  data <- read.table("data/hand.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/park2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
