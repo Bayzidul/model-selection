@@ -2,4 +2,4 @@
 Rational-Function
 *.log
 .RData
-.gitignore
+.RHistory
