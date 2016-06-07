@@ -26,6 +26,7 @@
   #
   #data <- read.table("data/ge-mainz14.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   data <- read.table("data/hand.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
+  #data <- read.table("data/HMS.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/ge-lowQ2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/park2.dat", header=TRUE ,  col.names = c("x", "y", "dy"))
   #data <- read.table("data/default.dat", header=TRUE,  col.names = c("x", "y", "dy"))
@@ -45,7 +46,7 @@
   #
   # Define a high order Maclaurin series to be used as a forward model.  
   #
-  fwd.model <- step(min.model, direction="forward", scope=(   ~ data$x + I(data$x^2) + I(data$x^3) +I(data$x^4)  + I(data$x^5) + I(data$x^6) +
+fwd.model <- step(min.model, direction="forward", scope=(   ~ data$x + I(data$x^2) + I(data$x^3) +I(data$x^4)  + I(data$x^5) + I(data$x^6) +
                                                            I(data$x^7) + I(data$x^8) + I(data$x^9) +I(data$x^10) + I(data$x^11) ))
   #
   # Print the function that passes our significance test.
