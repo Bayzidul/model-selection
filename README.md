@@ -16,7 +16,7 @@ Akaike information criterion.
 
 ## References
 
-- D. W. Higinbotham et al., The Proton Radius from Electron Scattering Data, [arXiv:1510.01293](http://arxiv.org/abs/1510.01293).
+- D. W. Higinbotham et al., The Proton Radius from Electron Scattering Data, Phys. Rev. C93 (2016) 055207 [arXiv:1510.01293](http://arxiv.org/abs/1510.01293).
 - R Core Team, [R: A Language and Environment for Statistical Computing](http://www.R-project.org/).
 - J. Fox and S. Weisberg, [An R Companion to Applied Regression](http://socserv.socsci.mcmaster.ca/jfox/Books/Companion).
 
@@ -27,11 +27,17 @@ Akaike information criterion.
       author         = "Higinbotham, Douglas W. and Kabir, Al Amin and Lin,
                         Vincent and Meekins, David and Norum, Blaine and Sawatzky,
                         Brad",
-      title          = "{The Proton Radius from Electron Scattering Data}",
-      year           = "2015",
+      title          = "{Proton Radius from Electron Scattering Data}",
+      journal        = "Phys. Rev.",
+      volume         = "C93",
+      year           = "2016",
+      number         = "5",
+      pages          = "055207",
+      doi            = "10.1103/PhysRevC.93.055207",
       eprint         = "1510.01293",
       archivePrefix  = "arXiv",
       primaryClass   = "nucl-ex",
+      reportNumber   = "JLAB-PHY-16-2",
       SLACcitation   = "%%CITATION = ARXIV:1510.01293;%%"
 }
 ```
