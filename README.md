@@ -14,11 +14,10 @@ Akaike information criterion.
 - [car](https://cran.r-project.org/web/packages/car/): Companion to Applied Regression
 - [gplot](https://cran.r-project.org/web/packages/gplots/index.html): Various R Programming Tools for Plotting Data
 
-(a tiny change)
 
 ## References
 
-- D. W. Higinbotham et al., [Proton Radius from Electron Scattering Data](http://dx.doi.org/10.1103/PhysRevC.93.055207)  [arXiv:1510.01293](http://arxiv.org/abs/1510.01293).
+- D. W. Higinbotham et al., [Physical Review C93 (2016) 055207](http://dx.doi.org/10.1103/PhysRevC.93.055207).
 - R Core Team, [R: A Language and Environment for Statistical Computing](http://www.R-project.org/).
 - J. Fox and S. Weisberg, [An R Companion to Applied Regression](http://socserv.socsci.mcmaster.ca/jfox/Books/Companion).
 
